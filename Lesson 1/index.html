@@ -37,6 +37,29 @@
 		color: white;
 		top: 45px;
 	}
+	nav{
+		width: 100%;
+		text-transform: uppercase;
+		font-family: Raleway;
+
+	}
+	nav ul{
+		width: 100%;
+		padding-left: 0;
+		text-align: center;
+	}
+	nav ul li{
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-right: 1px solid #dddddd;
+	}
+	nav ul li:nth-child(1){
+		padding-left: 0;
+	}
+	nav ul a{
+		color: #444;
+	}
 	section{
 		width: 100%;
 	}
@@ -58,12 +81,22 @@
 	</style>
 </head>
 <body>
-<header>
+<header id="home">
 	<h2 class="title">EMMA</h2>
 	<h2 class="title">SWIFT</h2>
 
 </header>
-<section class="gallery">
+<nav>
+	
+	<ul>
+		<a href="#home"><li>Home</li></a>
+		<a href="#biography"><li>Bio</li></a>
+		<a href="#gallery"><li>Gallery</li></a>
+		<a href="#map"><li>Map</li></a>
+		<a href="#contact"><li>Contact</li></a>
+	</ul>
+</nav>
+<section id="gallery" class="gallery">
 	
 	<div style="background-image: url(imgs/1.jpeg);" class="column"><img  src="imgs/1.jpeg"></div>
 	<div style="background-image: url(imgs/2.jpeg);" class="column"><img  src="imgs/2.jpeg"></div>
@@ -72,6 +105,11 @@
 	<div style="background-image: url(imgs/5.jpeg);" class="column"><img  src="imgs/5.jpeg"></div>
 	<div style="background-image: url(imgs/6.jpeg);" class="column"><img  src="imgs/6.jpeg"></div>
 </section>
-
+<section id="map">
+	
+</section>
+<section id="contact">
+	
+</section>
 </body>
 </html>
