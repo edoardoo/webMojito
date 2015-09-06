@@ -9,6 +9,7 @@
 		width: 100%;
 		padding: 0;
 		margin: 0;
+		font-family: 'Raleway';
 	}
 	/**{
 		box-sizing: border-box;
@@ -24,7 +25,6 @@
 		float: left;
 		height: 50%;
 		width: 50%;
-		font-family: Raleway;
 		text-align: right;
 		color: black;
 		font-weight: 100;
@@ -40,8 +40,6 @@
 	nav{
 		width: 100%;
 		text-transform: uppercase;
-		font-family: Raleway;
-
 	}
 	nav ul{
 		width: 100%;
@@ -57,11 +55,30 @@
 	nav ul li:nth-child(1){
 		padding-left: 0;
 	}
+	nav ul li:last-child {
+		border-right-color: transparent;
+	}
 	nav ul a{
 		color: #444;
+		text-decoration: none;
 	}
 	section{
 		width: 100%;
+	}
+	.row {
+		padding-top: 50px;
+		margin: auto;
+		width: 60%;
+		height: auto;
+	}
+	.row img {
+		width: 30%;
+		display: block;
+		margin: auto;
+	}
+	.row .txt {			
+		text-align: center;		
+		padding-bottom: 50px;
 	}
 	.column{
 		float: left;
@@ -89,13 +106,25 @@
 <nav>
 	
 	<ul>
-		<a href="#home"><li>Home</li></a>
-		<a href="#biography"><li>Bio</li></a>
-		<a href="#gallery"><li>Gallery</li></a>
-		<a href="#map"><li>Map</li></a>
-		<a href="#contact"><li>Contact</li></a>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#biography">Bio</a></li>
+		<li><a href="#gallery">Gallery</a></li>
+		<li><a href="#map">Map</a></li>
+		<li><a href="#contact">Contact</a></li>
 	</ul>
 </nav>
+<section class="biography">		
+	<div class="row">
+		<img src="imgs/author.png" />
+	</div>
+	<div class="row">			
+		<div class="txt">
+			Emma Swift is a 26 years old photographer from New York. She is deeply committed to photographing for aid organizations around the world.
+			She has received awards from the National Press Photographers Association and the Associated Press. She was thrust into the spot light in 2002 when her work was featured as one of the main photographers in the famed I and a Camera exhibition at the MOMA Gallery in London. Her work became an overnight sensation when images of he children came under public scrutiny. Since her controversial debut, Emma has been pushing the envelope of contemporary photography. 
+		</div>
+	</div>
+	<div class="clear"></div>		
+</section>
 <section id="gallery" class="gallery">
 	
 	<div style="background-image: url(imgs/1.jpeg);" class="column"><img  src="imgs/1.jpeg"></div>
