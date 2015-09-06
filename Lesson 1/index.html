@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>header page</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	body{
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	/**{
+		box-sizing: border-box;
+	}*/
+	header{
+		width: 100%;
+		height: 400px;
+		background-image: url(https://images.unsplash.com/photo-1438503733096-e5c5560f05ed?q=80&fm=jpg&s=f85e9819db1b47c8cda8f160a2b54fad);
+		background-size: cover;
+		background-position: 50%;
+	}
+	h2.title{
+		float: left;
+		height: 50%;
+		width: 50%;
+		font-family: Raleway;
+		text-align: right;
+		color: black;
+		font-weight: 100;
+		font-size: 40px;
+		line-height: 290px;
+		position: relative;
+	}
+	h2.title:nth-child(2){
+		text-align: left;
+		color: white;
+		top: 45px;
+	}
+	section{
+		width: 100%;
+	}
+	.column{
+		float: left;
+		width: 50%;
+	}
+	.gallery .column{
+		overflow: hidden;
+		background-size: cover;
+		background-position: 50%;
+		height: 250px;
+	}
+	.gallery .column img{
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	</style>
+</head>
+<body>
+<header>
+	<h2 class="title">EMMA</h2>
+	<h2 class="title">SWIFT</h2>
+
+</header>
+<section class="gallery">
+	
+	<div style="background-image: url(imgs/1.jpeg);" class="column"><img  src="imgs/1.jpeg"></div>
+	<div style="background-image: url(imgs/2.jpeg);" class="column"><img  src="imgs/2.jpeg"></div>
+	<div style="background-image: url(imgs/3.jpeg);" class="column"><img  src="imgs/3.jpeg"></div>
+	<div style="background-image: url(imgs/4.jpeg);" class="column"><img  src="imgs/4.jpeg"></div>
+	<div style="background-image: url(imgs/5.jpeg);" class="column"><img  src="imgs/5.jpeg"></div>
+	<div style="background-image: url(imgs/6.jpeg);" class="column"><img  src="imgs/6.jpeg"></div>
+</section>
+
+</body>
+</html>
